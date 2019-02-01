@@ -11,7 +11,7 @@
 		F5668EEB2200847600A473BF /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5668EEA2200847600A473BF /* TodoListViewController.swift */; };
 		F5668EEE2200847600A473BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5668EEC2200847600A473BF /* Main.storyboard */; };
 		F5668EF02200847700A473BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5668EEF2200847700A473BF /* Assets.xcassets */; };
-		F5668EF32200847700A473BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5668EF12200847700A473BF /* LaunchScreen.storyboard */; };
+		F5668F072204458600A473BF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5668F062204458600A473BF /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,8 @@
 		F5668EEA2200847600A473BF /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		F5668EED2200847600A473BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5668EEF2200847700A473BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5668EF22200847700A473BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5668EF42200847700A473BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5668F062204458600A473BF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				F5668EE82200847600A473BF /* AppDelegate.swift */,
-				F5668EEA2200847600A473BF /* TodoListViewController.swift */,
-				F5668EEC2200847600A473BF /* Main.storyboard */,
-				F5668EEF2200847700A473BF /* Assets.xcassets */,
-				F5668EF12200847700A473BF /* LaunchScreen.storyboard */,
+				F5668F092204469700A473BF /* Controllers */,
+				F5668F082204468D00A473BF /* Data Model */,
+				F5668F0A2204469D00A473BF /* Views */,
+				F5668F0B220446AD00A473BF /* Supporting Files */,
 				F5668EF42200847700A473BF /* Info.plist */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		F5668F082204468D00A473BF /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5668F062204458600A473BF /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		F5668F092204469700A473BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5668EEA2200847600A473BF /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5668F0A2204469D00A473BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5668EEC2200847600A473BF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5668F0B220446AD00A473BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5668EEF2200847700A473BF /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5668EF32200847700A473BF /* LaunchScreen.storyboard in Resources */,
 				F5668EF02200847700A473BF /* Assets.xcassets in Resources */,
 				F5668EEE2200847600A473BF /* Main.storyboard in Resources */,
 			);
@@ -135,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5668F072204458600A473BF /* Item.swift in Sources */,
 				F5668EEB2200847600A473BF /* TodoListViewController.swift in Sources */,
 				F5668EE92200847600A473BF /* AppDelegate.swift in Sources */,
 			);
@@ -149,14 +181,6 @@
 				F5668EED2200847600A473BF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F5668EF12200847700A473BF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5668EF22200847700A473BF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
